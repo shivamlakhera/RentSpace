@@ -1,0 +1,82 @@
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(37, 99, 235, 0.85), rgba(29, 78, 216, 0.85)), url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.hero-section h1 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.8rem); /* Scales smoothly with screen size */
+}
+
+.search-bar-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-bar-form input,
+.search-bar-form select {
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  flex: 1;
+  min-width: 220px;
+}
+
+.btn-search {
+  padding: 0.85rem 1.5rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.listings-section {
+  width: 100%;
+  max-width: 1300px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.listings-section h2 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Grid that auto-fits screens */
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  padding: 4rem;
+}
